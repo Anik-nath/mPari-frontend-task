@@ -4,11 +4,30 @@
   .slick-slide img {
     width: 100%;
     transform: scale(0.9);
+
   }
   .slick-prev:before,
   .slick-next:before {
-    color: black;
+    color: #000;
+    background: #ccc;
+    box-shadow: 2px 2px 4px 2px #ccc; 
+    border-radius: 12px;
   }
   .slick-dotted .slick-current img {
-    transform: scale(1.1);
+    transform: scale(1.4);
   }
+.banner{
+  background-image: url('../assets/Untitled\ design.png');
+}
+.world{
+animation: circle 200s ease infinite;
+}
+@keyframes circle{
+  100%{
+    transform:rotate(360deg)
+  }
+}
+.body{
+  overflow: hidden;
+}
+
