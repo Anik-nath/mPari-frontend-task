@@ -8,6 +8,7 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section>
@@ -46,7 +47,36 @@
         </nav>
       </header>
       <main>
-        
+        <div class="container-fluid mx-auto py-8">
+            <div class="grid grid-cols-2">
+                <div class="pl-12"> 
+                    <div class="grid grid-cols-4 gap-1 rounded-full bg-white overflow-hidden border shadow p-2">
+                        <!--Location -->
+                        <div class="flex items-center justify-center bg-blue-600 text-white rounded-l-full">
+                            <img class="w-4" src="./assets/magnifying-glass-solid.svg" alt="">
+                        </div>
+                        <!--Check-in-->
+                        <div class="flex flex-col items-center bg-white text-sm">
+                            <label class="text-gray-400" for="">Check-in</label>
+                            <input type="date" placeholder="Check-in" class="w-full px-4 py-2 focus:outline-none" />
+                        </div>
+                        <!-- Check-out -->
+                        <div class="flex flex-col items-center bg-white text-sm">
+                            <label class="text-gray-400" for="">Check-out</label>
+                            <input type="date" placeholder="Check-out" class="w-full px-4 py-2 focus:outline-none" />
+                        </div>
+                        <!--Username-->
+                        <div class="flex flex-row items-end mb-3 bg-white rounded-r-full">
+                            <img class="w-4" src="./assets/user-solid.svg" alt="user">
+                            <input type="text" placeholder="Username" class="w-full px-4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
       </main>
     </section>
   </body>
