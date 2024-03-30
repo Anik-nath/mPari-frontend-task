@@ -9,15 +9,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
   </head>
   <body>
-    <section style="height: 100vh;" class="banner w-full bg-cover bg-red-500">
+    <section style="height: 100vh" class="banner w-full bg-cover bg-red-500">
       <header>
         <nav>
           <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="flex h-16 items-center w-full md:w-1/2 justify-between">
+            <div
+              class="flex h-16 items-center w-full md:w-5/12 justify-between"
+            >
               <button type="button" class="text-blue-700 p-2 rounded mt-1">
                 <svg
                   class="block h-8 w-8"
@@ -36,7 +46,7 @@
               </button>
               <div class="logo">
                 <img
-                  class="h-16 w-auto text-red-500"
+                  class="h-20 w-auto text-red-500"
                   src="./assets/logo3.png"
                   alt="Your Company"
                 />
@@ -46,31 +56,47 @@
         </nav>
       </header>
       <main>
-        <div class="container-fluid mx-auto py-8">
+        <div class="container-fluid mx-auto py-8 mt-12">
           <div class="grid md:grid-cols-2 grid-cols-1">
+            <!-- left side -->
             <div id="left-side" class="md:pl-12 px-4">
-              <!-- search bar -->
-              <div class="flex flex-row gap-4 ml-16 mb-4 bg-blue-100 p-2 w-56 rounded-full">
-                <div class="flex items-center gap-4"><img src="./assets/house-solid.svg" class="w-8 h-8" alt="">
-                <h2>villarar</h2></div>                
-                <div><img src="./assets/building-solid.svg" class="w-8 h-8" alt=""></div>
-                <div><img src="./assets/hotel-solid.svg" class="w-8 h-8" alt=""></div>
+              <div
+                class="flex flex-row items-center ml-16 mb-4 bg-gray-200 w-56 rounded-t-2xl"
+              >
+                <div
+                  class="flex items-center gap-4 bg-gray-100 p-2 rounded-t-2xl"
+                >
+                  <img src="./assets/house.png" class="w-8 h-8" alt="" />
+                  <h2>villarar</h2>
+                </div>
+                <div class="mx-4">
+                  <img src="./assets/hotel.png" class="w-8 h-8" alt="" />
+                </div>
+                <div>
+                  <img src="./assets/building.png" class="w-8 h-8" alt="" />
+                </div>
               </div>
-              <div id="searchbar"
-                class="grid grid-cols-4 gap-1 rounded-full bg-white overflow-hidden border shadow p-2"
+              <!-- search bar -->
+              <div
+                id="searchbar"
+                class="grid grid-cols-5 rounded-full bg-white overflow-hidden border shadow-md pr-4"
               >
                 <!--Location -->
                 <div
-                  class="flex items-center justify-center bg-blue-600 text-white rounded-l-full"
+                  id="location"
+                  class="flex col-span-2 flex-row items-center gap-2"
                 >
-                  <img
-                    class="w-4"
-                    src="./assets/magnifying-glass-solid.svg"
-                    alt=""
-                  />
+                  <div
+                    class="flex items-center justify-center bg-blue-700 text-white rounded-full w-20 h-20"
+                  >
+                    <img class="w-6" src="./assets/mapindicate.png" alt="" />
+                  </div>
+                  <h2 class="text-sm">Nereye Gidyorsunuz?</h2>
                 </div>
                 <!--Check-in-->
-                <div class="flex flex-col items-center bg-white text-sm">
+                <div
+                  class="flex flex-col items-center col-auto bg-white text-sm pb-6"
+                >
                   <label class="text-gray-400" for="">Check-in</label>
                   <input
                     type="date"
@@ -88,42 +114,47 @@
                   />
                 </div>
                 <!--Username-->
-                <div
-                  class="flex flex-row items-end mb-3 bg-white rounded-r-full"
-                >
-                  <img class="w-4" src="./assets/user-solid.svg" alt="user" />
+                <div class="flex flex-row items-center bg-white rounded-r-full">
+                  <img class="w-3" src="./assets/user-solid.svg" alt="user" />
                   <input
                     type="text"
-                    placeholder="Username"
-                    class="w-full px-4"
+                    placeholder="Misafir ekleyin"
+                    class="w-full px-2"
                   />
                 </div>
               </div>
               <!-- slider -->
-              <section class="pt-12">
-                <h1 class="text-xl font-semibold">Villa of summer</h1>
+              <section id="slider" class="pt-12">
+                <h1 class="text-xl font-bold capitalize">
+                  Villa of summer firsartalar
+                </h1>
                 <div class="center slider container pt-4">
-                <div class="relative">
-                  <img class="w-full" src="./assets/Untitled design (1).png" />
-                  <div class="absolute bottom-0  text-white w-full h-12 bg-black">
-                    <!-- <h1>hello</h1> -->
+                  <div class="relative">
+                    <img
+                      class="w-full"
+                      src="./assets/Untitled design (1).png"
+                    />
+                  </div>
+                  <div>
+                    <img src="./assets/Untitled design (2).png" />
+                  </div>
+                  <div>
+                    <img src="./assets/Untitled design (3).png" />
+                  </div>
+                  <div>
+                    <img src="./assets/Untitled design4.png" />
                   </div>
                 </div>
-                <div>
-                  <img src="./assets/Untitled design (2).png" />
-                </div>
-                <div>
-                  <img src="./assets/Untitled design (3).png" />
-                </div>
-                <div>
-                  <img src="./assets/Untitled design4.png" />
-                </div>
-              </div>
               </section>
             </div>
-            <div id="right-side" class="w-full h-full">
+            <!-- right side -->
+            <div id="right-side relative" class="w-full h-full">
               <div class="flex p-4 justify-center items-center">
-                <img class="w-8/12 world border rounded-full p-4" src="./assets/round.png" alt="">
+                <img
+                  class="w-8/12 world border-solid border-2 border-gray-600 rounded-full p-4"
+                  src="./assets/world1.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
