@@ -1,0 +1,14 @@
+.slick-slide {
+    margin: 10px 20px;
+  }
+  .slick-slide img {
+    width: 100%;
+    transform: scale(0.9);
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+  .slick-dotted .slick-current img {
+    transform: scale(1.1);
+  }
