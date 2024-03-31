@@ -1,3 +1,18 @@
+.banner {
+  background-image: url("../assets/Untitled\ design.png");
+  height: 100vh;
+}
+.world {
+  animation: circle 50s ease infinite;
+}
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#location {
+  transition: all 0.5s ease;
+}
 .slick-slide {
   margin: 10px 20px;
 }
@@ -14,15 +29,4 @@
 }
 .slick-dotted .slick-current img {
   transform: scale(1.4);
-}
-.banner {
-  background-image: url("../assets/Untitled\ design.png");
-}
-.world {
-  animation: circle 50s ease infinite;
-}
-@keyframes circle {
-  100% {
-    transform: rotate(360deg);
-  }
 }

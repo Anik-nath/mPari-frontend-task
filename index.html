@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VILLA OF SUMMER</title>
+    <link rel="shortcut icon" href="./assets/logo3.ico" type="image/x-icon">
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -19,9 +20,13 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
-    <section style="height: 100vh" class="banner w-full bg-cover bg-red-500">
+    <section style="height: 100vh" class="banner w-full bg-cover bg-white">
       <header>
         <nav>
           <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -64,15 +69,15 @@
                 class="flex flex-row items-center ml-16 mb-4 bg-gray-200 w-56 rounded-t-2xl"
               >
                 <div
-                  class="flex items-center gap-4 bg-gray-100 p-2 rounded-t-2xl"
+                  class="flex items-center gap-4 animate__animated animate__fadeInLeft bg-gray-100 p-2 rounded-t-2xl"
                 >
                   <img src="./assets/house.png" class="w-8 h-8" alt="" />
-                  <h2>villarar</h2>
+                  <h2 class="text-blue-700">Villarar</h2>
                 </div>
-                <div class="mx-4">
+                <div class="mx-4 animate__animated animate__fadeInLeft">
                   <img src="./assets/hotel.png" class="w-8 h-8" alt="" />
                 </div>
-                <div>
+                <div class="animate__animated animate__fadeInLeft">
                   <img src="./assets/building.png" class="w-8 h-8" alt="" />
                 </div>
               </div>
@@ -84,14 +89,22 @@
                 <!--Location -->
                 <div
                   id="location"
-                  class="flex col-span-2 flex-row items-center gap-2"
+                  class="flex col-span-2 flex-row items-center gap-2 hover:bg-blue-700 hover:text-white"
                 >
                   <div
                     class="flex items-center justify-center bg-blue-700 text-white rounded-full w-20 h-20"
+                    id="imageContainer"
                   >
-                    <img class="w-6" src="./assets/mapindicate.png" alt="" />
+                    <img
+                      class="w-6"
+                      src="./assets/mapindicate.png"
+                      alt=""
+                      id="locationImage"
+                    />
                   </div>
-                  <h2 class="text-sm">Nereye Gidyorsunuz?</h2>
+                  <h2 id="location-text" class="text-sm">
+                    Nereye Gidyorsunuz?
+                  </h2>
                 </div>
                 <!--Check-in-->
                 <div
@@ -119,13 +132,15 @@
                   <input
                     type="text"
                     placeholder="Misafir ekleyin"
-                    class="w-full px-2"
+                    class="w-full px-2 appearance-none text-gray-800 leading-tight focus:outline-none focus:border-0"
                   />
                 </div>
               </div>
               <!-- slider -->
               <section id="slider" class="pt-12">
-                <h1 class="text-xl font-bold capitalize">
+                <h1
+                  class="text-xl font-bold capitalize animate__animated animate__fadeInLeft"
+                >
                   Villa of summer firsartalar
                 </h1>
                 <div class="center slider container pt-4">
@@ -149,12 +164,28 @@
             </div>
             <!-- right side -->
             <div id="right-side relative" class="w-full h-full">
-              <div class="flex p-4 justify-center items-center">
+              <div class="flex p-4 justify-center items-center relative">
                 <img
-                  class="w-8/12 world border-solid border-2 border-gray-600 rounded-full p-4"
+                  class="w-7/12 world border-solid border-2 border-gray-600 rounded-full p-4"
                   src="./assets/world1.png"
                   alt=""
                 />
+                <!-- discover world -->
+                <div
+                  style="top: 100px; left: 120px"
+                  class="w-auto h-auto text-sm text-center bg-white rounded px-5 py-1 absolute animate__animated animate__bounceIn"
+                >
+                  <h6>Discover the</h6>
+                  <p class="text-blue-500 font-bold">World</p>
+                </div>
+                <!-- time to vacation -->
+                <div
+                  style="bottom: 100px; right: 120px"
+                  class="w-auto h-auto text-sm text-center bg-white rounded px-6 py-1 absolute animate__animated animate__bounceIn"
+                >
+                  <h6>Time to</h6>
+                  <p class="text-blue-500 font-bold">Vacation</p>
+                </div>
               </div>
             </div>
           </div>
